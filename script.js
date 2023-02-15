@@ -12,15 +12,15 @@ var columna2        = document.getElementById("lista2")
 
 //funciones
 var moverTarea = function(){
-var aMover = tareaEnColumna.value;
+var aMover = tareaEnColumna;
     tareaMovida = document.createElement("li")
     enlace2 = document.createElement("a")
-    contenido2 = document.createTextNode(aMover)
+    
 
-    enlace2.appendChild(contenido2)
+    enlace2.appendChild(aMover)
     enlace2.setAttribute("href","#")
     tareaMovida.appendChild(enlace2)
-    columna2.appendChild(contenido2)
+    columna2.appendChild(aMover)
 }
 
 var agregarTarea = function(){
